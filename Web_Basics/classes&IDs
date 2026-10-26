@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 8 - Classes and IDs</title>
+
+</head>
+<body>
+    <h1 id="main-title">Classes and IDs</h1>
+
+    <p class="highlight">This paragraph has a yellow background.</p>
+    <p class="highlight">This paragraph uses the same class.</p>
+
+    <p class="blue-text">This paragraph has blue text.</p>
+
+    <p class="highlight blue-text">
+        This paragraph uses two classes.
+    </p>
+
+    <a href="#contact">Jump to Contact</a>
+
+    <h2 id="contact">Contact</h2>
+    <p>Email: sreyoseeprapti1@gmail.com</p>
+</body>
+</html>
