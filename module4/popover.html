@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popover and Details</title>
+</head>
+<body>
+    <h1>Popover and Details Practice</h1>
+
+    <!-- Popover -->
+    <h2>1. Popover</h2>
+
+    <button type="button" popovertarget="message">
+        Show Message
+    </button>
+
+    <div id="message" popover>
+        <h3>Hello, Prapti!</h3>
+        <p>This is a popover message.</p>
+
+        <button type="button"
+                popovertarget="message"
+                popovertargetaction="hide">
+            Close
+        </button>
+    </div>
+
+    <hr>
+
+    <!-- Details -->
+    <h2>2. Details and Summary</h2>
+
+    <details>
+        <summary>What is HTML?</summary>
+        <p>HTML creates the structure of a web page.</p>
+    </details>
+
+    <br>
+
+    <details>
+        <summary>What is CSS?</summary>
+        <p>CSS controls the appearance of a web page.</p>
+    </details>
+
+    <br>
+
+    <!-- Open by default -->
+    <details open>
+        <summary>My Learning Goals</summary>
+        <ul>
+            <li>Learn HTML.</li>
+            <li>Practise CSS.</li>
+            <li>Build a website.</li>
+        </ul>
+    </details>
+</body>
+</html>
