@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Unvisited link */
+a:link {
+    color: blue;
+}
+
+/* Visited link */
+a:visited {
+    color: purple;
+}
+
+/* Keyboard focus */
+a:focus {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+/* Mouse hover */
+a:hover {
+    color: darkgreen;
+    background-color: lightyellow;
+}
+
+/* While being clicked */
+a:active {
+    color: red;
+}
