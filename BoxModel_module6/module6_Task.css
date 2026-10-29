@@ -1,0 +1,124 @@
+/* Reset and box sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3e0e3;
+    color: #222;
+    padding: 80px 20px;
+}
+
+/* Centres the collection */
+.collections {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Card box model */
+.card {
+    position: relative;
+    min-height: 190px;
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Keeps text above the image if they overlap */
+.card-content {
+    position: relative;
+    z-index: 1;
+    width: 68%;
+}
+
+.card h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Link styled as a button */
+.card a {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    opacity: 0.85;
+}
+
+.card a:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 3px;
+}
+
+/* Shoe placement */
+.card img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Sporty colors */
+.sporty h2 {
+    color: #ce3b4b;
+}
+
+.sporty a {
+    background-color: #ce3b4b;
+}
+
+/* Casual colors */
+.casual h2 {
+    color: #174b91;
+}
+
+.casual a {
+    background-color: #174b91;
+}
+
+/* Formal colors */
+.formal h2 {
+    color: #4b291e;
+}
+
+.formal a {
+    background-color: #4b291e;
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    .card-content {
+        width: 100%;
+    }
+
+    .card img {
+        position: static;
+        display: block;
+        width: 180px;
+        height: 140px;
+        margin: 15px auto 0;
+    }
+}
