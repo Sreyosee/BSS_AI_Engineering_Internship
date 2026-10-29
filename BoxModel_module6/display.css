@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.block {
+    display: block;
+    background-color: lightblue;
+    margin-bottom: 5px;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+    padding: 10px;
+    background-color: lightyellow;
+    border: 1px solid gray;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.flex div,
+.grid div {
+    background-color: lavender;
+    padding: 20px;
+}
