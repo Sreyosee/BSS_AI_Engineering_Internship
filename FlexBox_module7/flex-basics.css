@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #eee;
+    border: 2px solid #ccc;
+}
+
+.box {
+    padding: 20px;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}
+
+/* Default flex direction */
+.row {
+    flex-direction: row;
+}
+
+/* Stack items vertically */
+.column {
+    flex-direction: column;
+}
+
+/* Distribute items along the main axis */
+.space-between {
+    justify-content: space-between;
+}
+
+/* Align items along the cross axis */
+.align-center {
+    min-height: 180px;
+    align-items: center;
+}
+
+.tall {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Center along both axes */
+.centered {
+    min-height: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Move items onto additional lines */
+.wrapping {
+    flex-wrap: wrap;
+}
+
+.wrapping .box {
+    flex: 0 0 140px;
+}
