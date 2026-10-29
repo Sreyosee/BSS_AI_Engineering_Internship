@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #eee;
+}
+
+.box {
+    min-width: 0;
+    padding: 15px;
+    background-color: darkcyan;
+    color: white;
+    overflow-wrap: anywhere;
+}
+
+/* Grow: distributes available extra space */
+.grow-example .box {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.grow-example .grow-more {
+    flex-grow: 2;
+}
+
+/* Shrink: reduces sizes when space is limited */
+.shrink-example {
+    max-width: 450px;
+}
+
+.no-shrink {
+    flex-basis: 180px;
+    flex-shrink: 0;
+}
+
+.can-shrink {
+    flex-basis: 300px;
+    flex-shrink: 1;
+}
+
+/* Basis: starting size along the main axis */
+.basis-example {
+    flex-wrap: wrap;
+}
+
+.basis-example .box:first-child {
+    flex-basis: 150px;
+}
+
+.basis-example .box:last-child {
+    flex-basis: 250px;
+}
+
+/* Shorthand: grow, shrink, basis */
+.shorthand-example {
+    flex-wrap: wrap;
+}
+
+.shorthand-example .box {
+    flex: 1 1 150px;
+}
+
+/* Order: smaller numbers appear first */
+.order-example {
+    flex-wrap: wrap;
+}
+
+.first {
+    order: 3;
+}
+
+.second {
+    order: 1;
+}
+
+.third {
+    order: 2;
+}
+
+/* Align one item independently */
+.self-example {
+    min-height: 220px;
+    align-items: flex-start;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.self-bottom {
+    align-self: flex-end;
+}
