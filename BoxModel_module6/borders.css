@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #eee;
+}
+
+.solid {
+    border: 3px solid blue;
+}
+
+.dashed {
+    border: 3px dashed green;
+}
+
+.dotted {
+    border: 3px dotted red;
+}
+
+.double {
+    border: 6px double purple;
+}
+
+.rounded {
+    border: 3px solid orange;
+    border-radius: 15px;
+}
+
+.different {
+    border-top: 3px solid red;
+    border-right: 3px dashed blue;
+    border-bottom: 3px dotted green;
+    border-left: 6px double purple;
+}
