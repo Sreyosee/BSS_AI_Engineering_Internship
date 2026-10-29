@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" href="specificity.css">
+</head>
+<body class="specificity-page">
+    <h1>CSS Specificity</h1>
+
+    <p>
+        Blue: styled by the paragraph selector.
+    </p>
+
+    <p class="special">
+        Green: the class rule wins over the paragraph rule.
+    </p>
+
+    <p class="special" id="unique-example">
+        Red: the ID rule wins over the class rule.
+    </p>
+
+    <p class="special" style="color: purple;">
+        Purple: the inline style wins over the stylesheet rules.
+    </p>
+</body>
+</html>
