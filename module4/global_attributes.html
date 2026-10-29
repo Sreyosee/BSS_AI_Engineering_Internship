@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes Practice</title>
+</head>
+<body>
+    <!-- ID: a unique identifier -->
+    <h1 id="heading">HTML Attributes Practice</h1>
+
+    <!-- Class: can be shared by multiple elements -->
+    <p class="highlight">First highlighted paragraph.</p>
+    <p class="highlight">Second highlighted paragraph.</p>
+
+    <!-- Style: CSS directly on an element -->
+    <p style="color: green;">This text is green.</p>
+
+    <!-- Accesskey: keyboard shortcut -->
+    <a href="#contact" accesskey="c">Jump to Contact</a>
+
+    <!-- Hidden: hides the element -->
+    <p hidden>You cannot see this paragraph.</p>
+
+    <!-- Tabindex: makes this element focusable using Tab -->
+    <p tabindex="0">Press Tab to focus this paragraph.</p>
+
+    <!-- Contenteditable: allows editing in the browser -->
+    <p contenteditable="true">Click here and edit this text.</p>
+
+    <!-- Draggable: allows dragging the element -->
+    <p draggable="true">Try dragging this text.</p>
+
+    <h2 id="contact">Contact</h2>
+
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            autocomplete="name"
+            autofocus>
+
+        <br><br>
+
+        <label for="message">Message:</label>
+        <input
+            type="text"
+            id="message"
+            name="message"
+            autocomplete="off">
+    </form>
+</body>
+</html>
