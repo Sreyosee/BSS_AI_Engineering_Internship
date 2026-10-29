@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    background-color: #173b56;
+    color: white;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar and main content */
+.layout {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    flex: 0 0 200px;
+    padding: 20px;
+    background-color: #e4edf3;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+.main {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+}
+
+.main > p {
+    margin-bottom: 20px;
+}
+
+/* Flexible course cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    flex: 1 1 180px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #eee;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #173b56;
+    color: white;
+}
+
+/* Stack the sidebar and content on smaller screens */
+@media (max-width: 600px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: auto;
+    }
+}
