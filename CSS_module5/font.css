@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Font properties */
+.font-family {
+    font-family: Georgia, serif;
+}
+
+.font-size {
+    font-size: 28px;
+}
+
+.font-weight {
+    font-weight: bold;
+}
+
+.font-style {
+    font-style: italic;
+}
+
+.font-variant {
+    font-variant: small-caps;
+}
+
+/* Text properties */
+.line-height {
+    line-height: 2;
+}
+
+.letter-spacing {
+    letter-spacing: 4px;
+}
+
+.word-spacing {
+    word-spacing: 12px;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.text-decoration {
+    text-decoration: underline;
+}
+
+.text-transform {
+    text-transform: uppercase;
+}
+
+.text-indent {
+    text-indent: 40px;
+}
