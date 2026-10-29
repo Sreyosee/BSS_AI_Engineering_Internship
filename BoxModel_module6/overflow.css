@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 220px;
+    height: 80px;
+    padding: 10px;
+    border: 2px solid darkblue;
+    background-color: lightblue;
+    margin-bottom: 100px;
+}
+
+.visible {
+    overflow: visible;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
