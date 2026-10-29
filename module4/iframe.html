@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe, Embed and Object Practice</title>
+</head>
+<body>
+    <h1>Embedding Content in HTML</h1>
+
+    <!-- 1. Webpage inside an iframe -->
+    <h2>1. Webpage</h2>
+
+    <iframe
+        src="https://example.com"
+        title="Example webpage"
+        width="600"
+        height="300">
+    </iframe>
+
+    <hr>
+
+    <!-- 2. Local video -->
+    <h2>2. Video</h2>
+
+    <video width="600" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+    </video>
+
+    <hr>
+
+    <!-- 3. Google Maps -->
+    <h2>3. Google Maps</h2>
+
+    <iframe
+        src="https://maps.google.com/maps?q=Dhaka%2C%20Bangladesh&amp;output=embed"
+        title="Map of Dhaka, Bangladesh"
+        width="600"
+        height="350"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+    <hr>
+
+    <!-- 4. PDF inside an iframe -->
+    <h2>4. PDF Using Iframe</h2>
+
+    <iframe
+        src="Internship Program Plan.pdf"
+        title="Sample PDF document"
+        width="600"
+        height="400">
+    </iframe>
+
+    <hr>
+
+    <!-- 5. Google Calendar -->
+    <h2>5. Google Calendar</h2>
+
+    <!-- Replace YOUR_CALENDAR_ID with your calendar's ID -->
+    <iframe
+        src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&amp;ctz=Asia%2FDhaka"
+        title="Google Calendar"
+        width="600"
+        height="400"
+        loading="lazy">
+    </iframe>
+
+    <hr>
+
+    <!-- 6. PDF using embed -->
+    <h2>6. PDF Using Embed</h2>
+
+    <embed
+        src="Internship Program Plan.pdf"
+        type="application/pdf"
+        title="Embedded PDF document"
+        width="600"
+        height="400">
+
+    <hr>
+
+    <!-- 7. PDF using object with fallback content -->
+    <h2>7. PDF Using Object</h2>
+
+    <object
+        data="Internship Program Plan.pdf"
+        type="application/pdf"
+        width="600"
+        height="400">
+
+        <p>
+            Cannot display the PDF?
+            <a href="Internship Program Plan.pdf">Open the PDF</a>.
+        </p>
+    </object>
+</body>
+</html>
