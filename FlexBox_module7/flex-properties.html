@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Properties and Order</title>
+    <link rel="stylesheet" href="flex-properties.css">
+</head>
+<body>
+    <h1>Flex Properties and Order</h1>
+    <p>Resize your browser to test the examples.</p>
+
+    <h2>Flex Grow</h2>
+    <div class="container grow-example">
+        <div class="box">Grow: 1</div>
+        <div class="box grow-more">Grow: 2</div>
+        <div class="box">Grow: 1</div>
+    </div>
+
+    <h2>Flex Shrink</h2>
+    <div class="container shrink-example">
+        <div class="box no-shrink">Does not shrink</div>
+        <div class="box can-shrink">Can shrink</div>
+    </div>
+
+    <h2>Flex Basis</h2>
+    <div class="container basis-example">
+        <div class="box">Starting size: 150px</div>
+        <div class="box">Starting size: 250px</div>
+    </div>
+
+    <h2>Flex Shorthand</h2>
+    <div class="container shorthand-example">
+        <div class="box">Flexible box</div>
+        <div class="box">Flexible box</div>
+        <div class="box">Flexible box</div>
+    </div>
+
+    <h2>Order</h2>
+    <div class="container order-example">
+        <div class="box first">HTML first, displayed third</div>
+        <div class="box second">HTML second, displayed first</div>
+        <div class="box third">HTML third, displayed second</div>
+    </div>
+
+    <h2>Align Self</h2>
+    <div class="container self-example">
+        <div class="box">Top</div>
+        <div class="box self-center">Center</div>
+        <div class="box self-bottom">Bottom</div>
+    </div>
+</body>
+</html>
