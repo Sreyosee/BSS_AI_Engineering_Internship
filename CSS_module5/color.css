@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+.color-example {
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+/* Text color */
+.text-color {
+    color: crimson;
+}
+
+/* Background color */
+.background-color {
+    background-color: lightblue;
+}
+
+/* Border color */
+.border-color {
+    border: 3px solid green;
+}
+
+/* Outline color */
+.outline-color {
+    outline: 3px solid purple;
+    outline-offset: 3px;
+}
+
+/* Box shadow */
+.box-shadow {
+    background-color: white;
+    box-shadow: 4px 4px 8px gray;
+}
+
+/* Text shadow */
+.text-shadow {
+    text-shadow: 2px 2px 3px gray;
+}
+
+/* SVG fill */
+.svg-fill {
+    fill: orange;
+}
