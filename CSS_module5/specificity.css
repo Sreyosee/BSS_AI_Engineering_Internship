@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Element selector */
+p {
+    color: blue;
+}
+
+/* Class selector wins over the element selector */
+.special {
+    color: green;
+}
+
+/* ID selector wins over the class selector */
+#unique-example {
+    color: red;
+}
+
+/*
+The inline style in specificity.html:
+style="color: purple;"
+
+wins over these normal stylesheet declarations.
+*/
