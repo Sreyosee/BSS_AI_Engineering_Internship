@@ -1,0 +1,64 @@
+*{ /* Removed padding and margine from everything*/
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f1f1f1;
+}
+
+.container{
+    width: 400px;
+    margin: 150px auto;
+}
+
+.card{
+    background: #373f4d;
+    color: #fff;
+    border-radius:5px;
+    text-align: center;
+    padding: 60px 50px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card h1{
+    font-size: 22px;
+    Margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.card p {
+    font-size:15px;
+    margin-bottom: 30px;
+}
+
+.card .form-group{
+    margin-bottom: 20px;
+}
+
+.card input[type='text']{
+    width: 100%;
+    padding: 15px /*Top & Bottom*/ 10px /*Up & Side*/;
+    font-size:large;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.card button{
+    width: 100%;
+    padding: 15px;
+    font-size: large;
+    border: none;
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 32%,
+     rgba(253, 29, 29, 1) 100%, rgba(252, 176, 69, 1) 77%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.card button:hover{
+        background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%,
+         rgb(90, 90, 202) 35%, rgb(33, 126, 144) 100%);
+
+}
