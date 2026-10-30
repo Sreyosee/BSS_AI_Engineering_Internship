@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #202626;
+    padding: 30px 20px;
+}
+
+/* Overall page */
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Orange header */
+header {
+    background-color: #ff7043;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #000;
+}
+
+/* Horizontal navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 18px;
+    background-color: #f1f1f1;
+}
+
+nav a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c43b11;
+}
+
+/* Main content and sidebar */
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    min-height: 420px;
+    padding: 35px;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 16px;
+}
+
+/* Recent posts */
+aside {
+    flex: 0 0 290px;
+}
+
+aside h2 {
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff7043;
+    padding: 10px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+}
+
+aside a {
+    display: block;
+    padding: 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+aside a:hover {
+    background-color: #ddd;
+}
+
+/* Stack content on smaller screens */
+@media (max-width: 700px) {
+    .content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    aside {
+        flex: auto;
+        width: 100%;
+    }
+
+    header {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
