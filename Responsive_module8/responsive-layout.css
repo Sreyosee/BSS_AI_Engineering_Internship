@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #eef2f7;
+  color: #243047;
+}
+
+/* Flexible width with a maximum size */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+h1 {
+  color: #3157a4;
+}
+
+/* Cards wrap when there is not enough space */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  flex: 1 1 250px;
+  min-width: 0;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 3px 10px #00000015;
+}
+
+.card h2 {
+  color: #3157a4;
+}
