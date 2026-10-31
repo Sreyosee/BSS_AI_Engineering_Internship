@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #243047;
+}
+
+/* vh uses viewport height; vw uses viewport width */
+.hero {
+  min-height: 70vh;
+  padding: 50px 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #243047;
+  color: white;
+}
+
+/* Minimum size, flexible size, maximum size */
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.hero a {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  background-color: #ffe08a;
+  color: #243047;
+  text-decoration: none;
+}
+
+.topics {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.topic-list {
+  display: flex;
+  gap: 20px;
+}
+
+.topic-list article {
+  flex: 1;
+  min-width: 0;
+  padding: 25px;
+  background-color: #eef2f7;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+/* Applies when the viewport is 600px wide or smaller */
+@media (max-width: 600px) {
+  .topic-list {
+    flex-direction: column;
+  }
+
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero a {
+    width: 100%;
+    max-width: 300px;
+  }
+}
