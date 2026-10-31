@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Queries and Units</title>
+  <link rel="stylesheet" href="container-queries.css">
+</head>
+<body>
+  <main>
+    <h1>Container Queries</h1>
+    <p>
+      Both cards use the same styles, but adjust to their own container width.
+    </p>
+
+    <div class="layout">
+      <section class="course-container wide">
+        <article class="course-card">
+          <div class="course-icon" aria-hidden="true">HTML</div>
+
+          <div class="course-content">
+            <h2>Web Development</h2>
+            <p>Learn to build websites using HTML and CSS.</p>
+            <a href="#practice">Start Learning</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="course-container narrow">
+        <article class="course-card">
+          <div class="course-icon" aria-hidden="true">CSS</div>
+
+          <div class="course-content">
+            <h2>Responsive Design</h2>
+            <p>Create layouts that adjust to different spaces.</p>
+            <a href="#practice">Start Learning</a>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <p id="practice">
+      Practice: resize the browser and compare the two cards.
+    </p>
+  </main>
+</body>
+</html>
