@@ -1,0 +1,185 @@
+/* Reusable value for navbar transparency */
+:root {
+  --header-transparency: 0.9;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling and space for the sticky navbar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #243047;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main container */
+.container {
+  width: calc(100% - 40px);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Sticky navbar */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  padding: 15px 20px;
+  margin-bottom: 60px;
+
+  background: linear-gradient(45deg, #f00, #00f);
+}
+
+/* JavaScript adds this class when scrolling */
+.header.transparent {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, var(--header-transparency)),
+    rgba(0, 0, 255, var(--header-transparency))
+  );
+
+  box-shadow: 0 3px 12px #00000025;
+}
+
+/* Navigation links */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 30px;
+  list-style: none;
+}
+
+.menu a {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #ffe08a;
+}
+
+a:focus-visible {
+  outline: 3px solid #ffe08a;
+  outline-offset: 4px;
+}
+
+/* Sections */
+.section {
+  margin: 30px 0 60px;
+}
+
+.section h1,
+.section h2 {
+  margin-bottom: 20px;
+  padding: 12px;
+
+  background: linear-gradient(45deg, #f00, #00f);
+  color: white;
+
+  font-size: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.section img {
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+#home {
+  margin-bottom: 100px;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 10px 18px;
+
+  background-color: #243047;
+  color: white;
+  border-radius: 6px;
+}
+
+.back-link:hover {
+  background-color: #3157a4;
+}
+
+/* Footer */
+footer {
+  padding: 25px 20px;
+  background-color: #243047;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 130px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 12px 15px;
+    margin-bottom: 35px;
+  }
+
+  .menu ul {
+    gap: 10px 20px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .section h1,
+  .section h2 {
+    font-size: 30px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
